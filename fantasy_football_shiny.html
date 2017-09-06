@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ChristophVel</title>
+	<title>ChristophVel- Fantasy Football Quick Analysis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Chris Vela Data Visuals" />
 	<meta name="keywords" content="data, consulting, visuals, r, python, postgis, basketball, natural language processing, sql" />
@@ -28,15 +28,16 @@
 	 -->
 
   	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta property="og:title" content="Fantasy Football Quick Analysis"/>
+	<meta property="og:image" content="https://www.christophvel.com/images/ff.png"/>
+	<meta property="og:url" content="https://www.christophvel.com/fantasy_football_shiny"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="ChristophVel"/>
+	<meta property="og:description" content="Using data from http://http://fantasyfootballanalytics.net/ to create a quick Shiny dashboard"/>
+	<meta name="twitter:title" content="Fantasy Football Quick Analysis"" />
+	<meta name="twitter:image" content="https://www.christophvel.com/images/ff.png" />
+	<meta name="twitter:url" content="https://www.christophvel.com/fantasy_football_shiny" />
+
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.png">
@@ -54,6 +55,13 @@
 
 	<style type="text/css">
 	img{max-width: 100%}
+	table, th, td {
+    border: 1px solid black;
+}
+th, td{
+    text-align: center;
+}
+
 	</style>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -80,7 +88,7 @@
 								<li><a href="/"><span>Work</span></a></li>
 								<li><a href="inside">About</a></li>
 								<li><a href="contact">Contact</a></li>
-								<li class="active"><a href="#">Tutorials</a></li>
+								<li class="active"><a href="tutorials">Tutorials</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
@@ -100,89 +108,36 @@
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
 						<div class="intro animate-box">
-							<h1>Tutorials</h1>
+							<h6><img class="img-circle" src="images/20170630_chris_0019_web.jpg" height="60px"><font color="#848484"> Chris Vela <font color="#52d3aa">|</font> Sep 7th</font></h6>
+							<hr>
+							<h1 align="left">Fantasy Football Shiny App</h1>
+							<h4 align="left"><font color="#848484">Using data from Fantasy Football Analytics to Make Quick Decisions.</font></h4>
+							<img src="images/ff.png">
+							
 						</div>
 					</div>
 				</div>
-			<div>
+			</div>
 		</section>
-
+		<hr>
 		<section id="product">
 			<div class="container">
 
 					<div class="col-md-12 section-heading text-center">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 subtext">
-								<p>Check out some of my tutorials on R &amp Python. </p>
-							</div>
-						</div>
-					</div>
 
-				<div class="row">
-					<div class="post-entry">
-						<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="fantasy_football_shiny"><img src="images/ff.png" alt="Product"></a>
-								<div>
-									<h3><a href="fantasy_football_shiny">Fantasy Football Shiny App</a></h3>
-									<p>Using data from FF Analytics to create a quick Shiny dashboard.</p>
-									<span><a href="fantasy_football_shiny">Read More...</a></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="got_death_tracker"><img src="images/got.jpg" alt="Product"></a>
-								<div>
-									<h3><a href="got_death_tracker">Will Jon Snow Die Again?</a></h3>
-									<p>Can past seasons of GOT predict what will happen in Season 7?</p>
-									<span><a href="got_death_tracker">Read More...</a></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="espn_nba_webscraper.html"><img src="images/shotchart.png" alt="Product"></a>
-								<div>
-									<h3><a href="espn_nba_webscraper.html">ESPN NBA Webscraper in R</a></h3>
-									<p>Learn how to scrape the ESPN website for in-game data.</p>
-									<span><a href="espn_nba_webscraper.html">Learn More...</a></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="zillow.html"><img src="images/zillow.png" alt="Product"></a>
-								<div>
-									<h3><a href="zillow.html">Kaggle Zillow EDA</a></h3>
-									<p>Exploratory Data Analysis from the Kaggle Zillow Competition</p>
-									<span><a href="zillow.html">Learn More...</a></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="https://christophvel.wordpress.com/2016/04/17/predicting-the-democratic-race-using-google-trends/"><img src="images/whitehouse.png" alt="Product"></a>
-								<div>
-									<h3><a href="https://christophvel.wordpress.com/2016/04/17/predicting-the-democratic-race-using-google-trends/">Democratic Primary Predictions</a></h3>
-									<p>Using Google Search Analytics to see the 2016 Dem Race.</p>
-									<span><a href="https://christophvel.wordpress.com/2016/04/17/predicting-the-democratic-race-using-google-trends/">Read More...</a></span>
-								</div>
-							</div>
-						</div>
-												<div class="col-md-6">
-							<div class="post animate-box">
-								<a href="https://christophvel.wordpress.com/2016/04/15/kobe_compares_to_hof_last_game/"><img src="images/kobe1.png" alt="Product"></a>
-								<div>
-									<h3><a href="https://christophvel.wordpress.com/2016/04/15/kobe_compares_to_hof_last_game/">How does Kobe's Last Game Compare to the Greats?</a></h3>
-									<p>In depth look at that epic game.</p>
-									<span><a href="https://christophvel.wordpress.com/2016/04/15/kobe_compares_to_hof_last_game/">Read More...</a></span>
-								</div>
-							</div>
-						</div>
+								<p align="left">Hours before my fantasy draft, I decided to use the data from <a href ="http://fantasyfootballanalytics.net">Fantasy Football Analytics</a> (which does some amazing work weighting player projections from multiple FF websites). Only problem was their own Shiny App didn't feel as condusive for me to make quick decisions as our draft would go on. I needed quick decisions to make while still be able to understand the data. Hence I decided right before the draft to make this quick FF Analysis to help me out. As you can see my league in the other tab. I am the 'Los Mejor Chingons' and my expected FF points for the season were the highest against my opponents. 
+								</p>
+								<p align="left">
+								So just a quick little tutorial how to use this app if you decide to test your prowness. It's actually really simple, but takes some due deligence to add the data as the draft goes on. When your opponents draft, just input the player's name and it will take them off the graphs so you can see who is available, and when you draft a player just type it in the correspodning text box and will do the same and add the player to your team so you can see your expected points for the season. 
 
+								</p>
+
+								<p align="left">Now you're wondering where is the quick analysis. Well based on the guys at FF Analytics for Snake Drafts, there are two ways to optimize your draft pick based on starters and your bench. For starters, you are looking for lower risk, and high lower end expected points. Essentially want to find people who still have a high expected value on their lower end. In a graph using Plotly, which allows you to hover over points to see names, it's actually really easy, just look for people in the upper left of the graph. Now for bench players, you want to hope for the upper range to be high as well as the VOR. So you are looking for players in the upper right corner to draft. With that I hope it makes it simple for you to make quick decisions, especially if you are like me and didn't study the league that much this year.
+								</p>
+
+								<p align="left">If you want to run the model or mess with the data, all the code and files are available for you to fork on my <a href="https://github.com/velaraptor/fantasy_football_shiny" target="_blank">github repo</a>. </p>
+								<iframe src="https://christophvel.shinyapps.io/fantasy_football_risks/" style="border: none; width: 100%; height: 1500px"></iframe>
 					</div>
-				</div>
 			</div>
 		</section>
 
